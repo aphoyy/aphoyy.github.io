@@ -3,6 +3,10 @@ import { createRoot } from 'react-dom/client'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { Root, Projects, About, Skills, Contact } from './routes'
 import './scss/index.scss'
+import './assets/fonts/8bitOperatorPlus-Bold.ttf'
+import './assets/fonts/MERCY.otf'
+import './assets/fonts/monsterfriendbackpro.otf'
+import './assets/fonts/monsterfriendforepro.otf'
 
 const router = createHashRouter([
     {

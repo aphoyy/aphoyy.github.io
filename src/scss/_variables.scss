@@ -8,20 +8,20 @@ $backgroundHighlight: #3CB24E;
 
 @font-face {
     font-family: UndertaleBack;
-    src: url("src/assets/fonts/monsterfriendbackpro.otf") format("opentype");
+    src: local("monsterfriendbackpro"), url("./assets/fonts/monsterfriendbackpro.otf") format("opentype");
 }
 
 @font-face {
     font-family: UndertaleFront;
-    src: url("src/assets/fonts/monsterfriendforepro.otf") format("opentype");
+    src: local("monsterfriendforepro"), url("./assets/fonts/monsterfriendforepro.otf") format("opentype");
 }
 
 @font-face {
     font-family: "8BitOperatorPlus-Bold";
-    src: url("src/assets/fonts/8bitOperatorPlus-Bold.ttf") format("opentype");
+    src: local("8bitOperatorPlus-Bold"), url("./assets/fonts/8bitOperatorPlus-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: MERCY;
-    src: url("src/assets/fonts/MERCY.otf") format("opentype");
+    src: local("MERCY"), url("./assets/fonts/MERCY.otf") format("opentype");
 }
