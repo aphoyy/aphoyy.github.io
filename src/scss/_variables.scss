@@ -1,0 +1,27 @@
+$black: #000000;
+$white: #ffffff;
+$shadow: #848484;
+$text: #808080;
+$menu : #ff7f27;
+$menuSelected : #ffff00;
+$backgroundHighlight: #3CB24E;
+
+@font-face {
+    font-family: UndertaleBack;
+    src: url("src/assets/fonts/monsterfriendbackpro.otf") format("opentype");
+}
+
+@font-face {
+    font-family: UndertaleFront;
+    src: url("src/assets/fonts/monsterfriendforepro.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "8BitOperatorPlus-Bold";
+    src: url("src/assets/fonts/8bitOperatorPlus-Bold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: MERCY;
+    src: url("src/assets/fonts/MERCY.otf") format("opentype");
+}

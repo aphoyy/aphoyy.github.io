@@ -1,0 +1,30 @@
+@import './variables'; 
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: "8BitOperatorPlus-Bold", sans-serif;
+}
+
+body {
+    color: $text;
+    background-color: $black;
+}
+
+main {
+    width: 750px;
+    height: auto;
+    margin: 185px auto 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hidden {
+    color: transparent !important;
+}

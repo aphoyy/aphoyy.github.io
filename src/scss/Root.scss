@@ -1,0 +1,42 @@
+@import './variables';
+
+.intro {
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__wrapper {
+        display: grid;
+    }
+    &__title--back, &__title--front {
+        font-size: 2.4rem;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    &__title--back {
+        z-index: 1;
+        font-family: UndertaleBack, sans-serif;
+        color: $shadow;
+    }
+    &__title--front {
+        z-index: 2;
+        font-family: UndertaleFront, sans-serif;
+        color: $white;
+        margin-bottom: 50px;
+    }
+    &__subtitle {
+        color: $text;
+    }
+    .heart {
+        position: relative;
+        top: 39px;
+        left: 265px;
+        width: 15px;
+        height: 15px;
+        background-color: red;
+        grid-row: 1;
+        grid-column: 1;
+    }
+}

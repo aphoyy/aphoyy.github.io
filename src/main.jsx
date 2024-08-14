@@ -1,8 +1,8 @@
-import { StrictMode } from 'react'
+// import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { Root, Projects, About, Skills, Contact } from './routes'
-import './index.css'
+import './scss/index.scss'
 
 const router = createHashRouter([
     {
@@ -28,7 +28,7 @@ const router = createHashRouter([
 ]);
 
 createRoot(document.getElementById('root')).render(
-    <StrictMode>
+    // <StrictMode>
         <RouterProvider router={router} />
-    </StrictMode>,
+    // </StrictMode>,
 )
