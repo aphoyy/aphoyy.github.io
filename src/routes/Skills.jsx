@@ -1,5 +1,5 @@
 export function Skills() {
     return (
-        <>SKILLS</>
+        <div>SKILLS</div>
     )
 }
