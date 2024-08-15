@@ -1,4 +1,5 @@
 import { Banner, Navbar } from '../components'
+import bannerUrl from '/src/assets/images/qr-code.png'
 
 export function Projects() {
     return (
@@ -6,7 +7,7 @@ export function Projects() {
             <Navbar currentPage="projects" />
             <main>
                 <Banner
-                    imgUrl='src/assets/images/qr-code.png'
+                    imgUrl={bannerUrl}
                     title='QR-Code'
                     text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cumque, architecto eum quas expedita reprehenderit tempora quo. Recusandae quasi molliti'
                 />
