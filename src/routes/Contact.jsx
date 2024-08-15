@@ -1,5 +1,12 @@
+import { Navbar } from "../components";
+
 export function Contact() {
     return (
-        <>CONTACT</>
+        <>
+            <Navbar currentPage="contact" />
+            <main>
+                HELLO CONTACT
+            </main>
+        </>
     )
 }

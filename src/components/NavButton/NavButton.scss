@@ -1,0 +1,46 @@
+@import '../../scss/variables';
+
+.button {
+    cursor: pointer;
+    height: 70;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $menu;
+    border: 4px solid $menu;
+    text-decoration: none;
+    &__text, &__div {
+        font-family: 'MERCY', sans-serif;
+        font-size: 46.667px;
+        position: relative;
+        bottom: 2px;
+    }
+    &__text {
+        letter-spacing: -5px;
+    }
+    &__div {
+        width: 35px;
+        margin-right: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__heart {
+        position: relative;
+        bottom: -2px;
+        width: 29px;
+        height: 29px;
+    }
+    &:hover {
+        color: $menuSelected;
+        border-color: $menuSelected;
+        background-color: unset;
+    }
+    & ~ .button {
+        margin-left: 30px;
+    }
+    &.active {
+        border: 4px double;
+    }
+}

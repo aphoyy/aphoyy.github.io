@@ -17,14 +17,28 @@ body {
 }
 
 main {
-    width: 750px;
-    height: auto;
-    margin: 185px auto 65px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 800px;
+    height: 600px;
+    margin: 120px auto 0;
+    @include flex-center;
+    position: relative;
 }
 
 .hidden {
     color: transparent !important;
+}
+
+.background {
+    width: 1000px;
+    height: 450px;
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 31%;
+    div {
+        width: 16.6%;
+        height: 50%;
+        border: 1px solid $backgroundHighlight;
+    }
 }

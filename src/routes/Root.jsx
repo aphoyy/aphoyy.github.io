@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { playSound } from "../scripts/sound";
 import '../scss/Root.scss';
@@ -7,6 +7,7 @@ export function Root() {
     const navigate = useNavigate();
     const [currentTitle, setCurrentTitle] = useState('');
     const [isHeart, setIsHeart] = useState(false);
+    const [switchPage, setSwitchPage] = useState(false);
     const title = 'christOphe scherrer'; // Upper case => heart
     let titleIndex = 0;
 
@@ -59,11 +60,18 @@ export function Root() {
         subtitle.classList.add('hidden');
     }
 
-    // Clear interval and go to /projects
+    // Clear interval and set switchPage to true
     function nextPage() {
         clearInterval(blinkInterval);
-        navigate('/projects');
+        setSwitchPage(true);
     }
+
+    // Go to /projects when switchPage is true
+    useEffect(() => {
+        if (switchPage) {
+            navigate('/projects');
+        }
+    }, [switchPage, navigate]);
 
     return (
         <main className="intro">

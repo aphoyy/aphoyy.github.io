@@ -6,22 +6,34 @@ $menu : #ff7f27;
 $menuSelected : #ffff00;
 $backgroundHighlight: #3CB24E;
 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @font-face {
     font-family: UndertaleBack;
-    src: local("monsterfriendbackpro"), url("./assets/fonts/monsterfriendbackpro.otf") format("opentype");
+    src: local("monsterfriendbackpro"), url("../assets/fonts/monsterfriendbackpro.otf") format("opentype");
 }
 
 @font-face {
     font-family: UndertaleFront;
-    src: local("monsterfriendforepro"), url("./assets/fonts/monsterfriendforepro.otf") format("opentype");
+    src: local("monsterfriendforepro"), url("../assets/fonts/monsterfriendforepro.otf") format("opentype");
 }
 
 @font-face {
     font-family: "8BitOperatorPlus-Bold";
-    src: local("8bitOperatorPlus-Bold"), url("./assets/fonts/8bitOperatorPlus-Bold.ttf") format("truetype");
+    src: local("8bitOperatorPlus-Bold"), url("../assets/fonts/8bitOperatorPlus-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: MERCY;
-    src: local("MERCY"), url("./assets/fonts/MERCY.otf") format("opentype");
+    src: local("MERCY"), url("../assets/fonts/MERCY.otf") format("opentype");
 }

@@ -1,5 +1,12 @@
+import { Navbar } from "../components";
+
 export function About() {
     return (
-        <>ABOUT</>
+        <>
+            <Navbar currentPage="about" />
+            <main>
+                HELLO ABOUT
+            </main>
+        </>
     )
 }

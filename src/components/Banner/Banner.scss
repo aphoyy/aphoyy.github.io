@@ -1,0 +1,27 @@
+@import '../../scss/variables';
+
+.banner {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img {
+        width: 600px;
+        border: 4px double $backgroundHighlight;
+    }
+    &__wrapper {
+        width: 800px;
+        height: 150px;
+        padding: 10px;
+        margin-top: 60px;
+        border: 5px solid $white;
+    }
+    &__title {
+        font-size: 1.6rem;
+        color: $white;
+    }
+    &__text {
+        font-size: 1.2rem;
+    }
+}

@@ -1,5 +1,13 @@
+import { Navbar } from '../components'
+
 export function Skills() {
     return (
-        <div>SKILLS</div>
+        <>
+            <Navbar currentPage="skills" />
+            <main>
+                HELLO SKILLS
+            </main>
+        </>
+
     )
 }
