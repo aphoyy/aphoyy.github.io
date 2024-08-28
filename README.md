@@ -1,10 +1,22 @@
 # Portfolio - Inspired by Undertale
 Own portfolio for my last project at OpenClassrooms
 
+## Github Pages
+https://aphoyy.github.io/
+
 ## Installation
-```sh
+To install, use [npm](https://www.npmjs.com/) :
+```bash
+# Install dependencies
 npm install
+# Start local dev server
 npm run dev
+```
+
+To deploy on Github Pages :
+```bash
+# Publish dist folder to gh-pages branch
+npm run deploy
 ```
 
 ## Technologies used
@@ -14,5 +26,6 @@ npm run dev
 - Git
 - Github
 - React
-- React-router-dom
+- React Router
 - Vite
+- npm
