@@ -1,0 +1,30 @@
+@import '../../scss/variables';
+
+.title {
+    display: grid;
+    &__text {
+        font-size: 2.1rem;
+        grid-row: 1;
+        grid-column: 1;
+        &--front {
+            z-index: 2;
+            font-family: UndertaleFront, sans-serif;
+            color: $white;
+        }
+        &--back {
+            z-index: 1;
+            font-family: UndertaleBack, sans-serif;
+            color: $shadow;
+        }
+    }
+    &__heart {
+        position: relative;
+        top: 30px;
+        left: 225px;
+        width: 20px;
+        height: 15px;
+        background-color: red;
+        grid-row: 1;
+        grid-column: 1;
+    }
+}

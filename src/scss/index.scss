@@ -1,4 +1,4 @@
-@import './variables'; 
+@import './variables';
 
 *, *::before, *::after {
     margin: 0;
@@ -57,65 +57,49 @@ main {
     }
 }
 
-.contact {
+.list {
+    padding-left: 20px;
+    list-style-type: symbols(cyclic "*")
+}
+
+.box {
     margin-top: 80px;
-    flex-direction: column;
     justify-content: start;
-    &__title-wrapper {
-        display: grid;
-    }
-    &__heart {
-        position: relative;
-        top: 30px;
-        left: 230px;
-        width: 15px;
-        height: 15px;
-        background-color: red;
-        grid-row: 1;
-        grid-column: 1;
-    }
-    &__title {
-        font-size: 2.1rem;
-        grid-row: 1;
-        grid-column: 1;
-        &--front {
-            z-index: 2;
-            font-family: UndertaleFront, sans-serif;
-            color: $white;
-        }
-        &--back {
-            z-index: 1;
-            font-family: UndertaleBack, sans-serif;
-            color: $shadow;
-        }
-    }
+    flex-direction: column;
     &__wrapper {
-        width: 500px;
-        height: auto;
-        margin-top: 40px;
+        background-color: $black;
         border: $white solid 5px;
         padding: 20px;
-        background-color: $black;
-    }
-    &__container {
-        display: flex;
-        margin-bottom: 30px;
+        margin-top: 40px;
     }
     &__subtitle {
         color: $white;
         margin-bottom: 4px;
     }
+    &__link {
+        font-size: 1.17rem;
+        color: $text;
+        text-decoration: none;
+        padding: 2px 0;
+        display: flex;
+        align-items: center;
+    }
     &__logo {
         width: 30px;
         margin-left: 8px;
     }
-    &__link {
-        font-size: 1.17rem;
+    &__list {
+        padding-left: 20px;
+        list-style-type: symbols(cyclic "*")
+    }
+    .email {
         display: flex;
-        align-items: center;
-        padding: 2px 0;
-        text-decoration: none;
-        color: $text;
+        margin-bottom: 30px;
+        &__copy {
+            width: 30px;
+            height: 30px;
+            margin-left: 8px;
+        }
     }
 }
 
@@ -132,9 +116,4 @@ main {
     bottom: 0px;
     left: 15vw;
     width: 280px;
-}
-
-.list {
-    padding-left: 20px;
-    list-style-type: symbols(cyclic "*")
 }

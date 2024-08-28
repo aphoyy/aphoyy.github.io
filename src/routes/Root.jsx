@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { playSound } from "../scripts/sound";
+import { Title } from "../components";
 import '../scss/Root.scss';
 
 export function Root() {
     const navigate = useNavigate();
     const [currentTitle, setCurrentTitle] = useState('');
-    const [isHeart, setIsHeart] = useState(false);
+    const [isHeartHidden, setIsHeartHidden] = useState(true);
     const [switchPage, setSwitchPage] = useState(false);
     const title = 'christOphe scherrer'; // Upper case => heart
     let titleIndex = 0;
@@ -24,7 +25,7 @@ export function Root() {
             titleIndex++;
             // Add red background to fill the heart
             if (titleIndex === 7) {
-                setIsHeart(true);
+                setIsHeartHidden(false);
             }
         } else {
             // Clear interval and show the blinking subtitle
@@ -75,11 +76,7 @@ export function Root() {
 
     return (
         <main className="intro">
-            <div className="intro__wrapper">
-                <h2 className="intro__title--back">{currentTitle}</h2>
-                <h1 className="intro__title--front">{currentTitle}</h1>
-                <div className={isHeart ? "intro__heart-logo heart" : "intro__heart-logo"}></div>
-            </div>
+            <Title currentTitle={currentTitle} isHeartHidden={isHeartHidden} />
             <p className="intro__subtitle hidden">[Cliquez ou appuyez sur entrée pour démarrer]</p>
         </main>
     )

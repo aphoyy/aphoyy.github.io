@@ -46,12 +46,8 @@ export function Projects() {
                     <div></div>
                     <div></div>
                 </div>
-                <div className="arrow arrow--left" onClick={() => handleCarrousel("reverse")}>
-                    &lt;
-                </div>
-                <div className="arrow arrow--right" onClick={() => handleCarrousel()}>
-                    &gt;
-                </div>
+                <div className="arrow arrow--left" onClick={() => handleCarrousel("reverse")}>&lt;</div>
+                <div className="arrow arrow--right" onClick={() => handleCarrousel()}>&gt;</div>
             </main>
         </>
     )
