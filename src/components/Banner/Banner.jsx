@@ -2,21 +2,26 @@ import PropTypes from 'prop-types'
 import './Banner.scss'
 import gitHubLogo from '../../assets/images/github-mark-white.png';
 
-export function Banner({ imgUrl, title, text, github, tools }) {
+export function Banner({ currentProject }) {
+    console.log(currentProject.imgUrl)
+
     return (
         <div className="banner">
-            <img className="banner__img" src={imgUrl} alt={title} />
+            <img className="banner__img" src={currentProject.imgUrl} alt={currentProject.title} />
             <div className="banner__wrapper">
-                <h1 className="banner__title">{title} <a href={github} target="_blank"><img className="banner__github" src={gitHubLogo} /></a></h1>
-                <p className="banner__text">{text}</p>
-                <p>{tools}</p>
+                <h1 className="banner__title">
+                    {currentProject.title} 
+                    <a href={currentProject.github} target="_blank">
+                        <img className="banner__github" src={gitHubLogo} />
+                    </a>
+                </h1>
+                <p className="banner__text">{currentProject.desc}</p>
+                <p>{currentProject.tools}</p>
             </div>
         </div>
     )
 }
 
 Banner.propTypes = {
-    imgUrl: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
+    currentProject: PropTypes.object.isRequired,
 }

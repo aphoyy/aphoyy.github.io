@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './Title.scss';
 
 export function Title({ currentTitle, isHeartHidden }) {
@@ -8,4 +9,9 @@ export function Title({ currentTitle, isHeartHidden }) {
             <div className={isHeartHidden ? "" : "title__heart"}></div>
         </div>
     )
+}
+
+Title.propTypes = {
+    currentTitle: PropTypes.object,
+    isHeartHidden: PropTypes.bool,
 }

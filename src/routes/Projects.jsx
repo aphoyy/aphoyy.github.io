@@ -25,13 +25,7 @@ export function Projects() {
         <>
             <Navbar currentPage="projects" />
             <main>
-                <Banner
-                    imgUrl={currentProject.img}
-                    title={currentProject.title}
-                    text={currentProject.text}
-                    github={currentProject.github}
-                    tools={currentProject.tools}
-                />
+                <Banner currentProject={currentProject} />
                 <div className="background">
                     <div></div>
                     <div></div>
