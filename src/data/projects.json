@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Kasa - OpenClassrooms",
+        "img": "/src/assets/images/projects/kasa.png",
+        "text": "React project for an appartment rental company",
+        "github": "https://github.com/aphoyy/oc-projet-7",
+        "tools": "HTML/CSS/SCSS/GitHub/React/React Router/Vite/npm"
+    },
+    {
+        "title": "QR Code",
+        "img": "/src/assets/images/projects/qr-code.png",
+        "text": "My solution for the QR Code challenge from Frontend Mentor"
+    },
+    {
+        "title": "Age Calculator",
+        "img": "/src/assets/images/projects/age-calculator.png",
+        "text": "My solution for the Age Calculator challenge from Frontend Mentor. I used HTML, CSS and JS."
+    }
+
+]

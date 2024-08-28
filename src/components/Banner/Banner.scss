@@ -20,8 +20,32 @@
     &__title {
         font-size: 1.6rem;
         color: $white;
+        display: flex;
     }
     &__text {
         font-size: 1.2rem;
+    }
+    &__github {
+        width: 30px;
+        height: 30px;
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+}
+
+.contact {
+    position: relative;
+    display: flex;
+    &__copy {
+        width: 30px;
+        height: 30px;
+        margin-left: 8px;
+    }
+    &__check {
+        position: absolute;
+        right: -10px;
+        bottom: 15px;
+        width: 30px;
+        height: 30px;
     }
 }

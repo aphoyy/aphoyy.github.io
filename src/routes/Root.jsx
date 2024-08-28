@@ -49,7 +49,7 @@ export function Root() {
     // Clock for making subtitle blink
     let blinkInterval = '';
     function setBlinkInterval() {
-        blinkInterval = setInterval(blink, '1000');
+        blinkInterval = setInterval(blink, '1600');
     }
 
     // Make the subtitle blink
@@ -80,7 +80,7 @@ export function Root() {
                 <h1 className="intro__title--front">{currentTitle}</h1>
                 <div className={isHeart ? "intro__heart-logo heart" : "intro__heart-logo"}></div>
             </div>
-            <p className="intro__subtitle hidden">[Click or press enter to start]</p>
+            <p className="intro__subtitle hidden">[Cliquez ou appuyez sur entrée pour démarrer]</p>
         </main>
     )
 }
