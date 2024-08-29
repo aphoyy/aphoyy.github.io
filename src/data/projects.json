@@ -4,17 +4,21 @@
         "imgUrl": "/assets/projects/kasa.png",
         "desc": "React project for an appartment rental company",
         "github": "https://github.com/aphoyy/oc-projet-7",
-        "tools": "HTML/CSS/SCSS/GitHub/React/React Router/Vite/npm"
+        "tools": ["HTML/CSS", "SCSS", "GitHub", "React", "React Router"]
     },
     {
         "title": "QR Code",
         "imgUrl": "/assets/projects/qr-code.png",
-        "desc": "My solution for the QR Code challenge from Frontend Mentor"
+        "desc": "My solution for the QR Code challenge from Frontend Mentor",
+        "github": "https://github.com/aphoyy/oc-projet-7",
+        "tools": ["HTML/CSS", "SCSS", "GitHub", "React", "React Router", "Vite", "npm"]
     },
     {
         "title": "Age Calculator",
         "imgUrl": "/assets/projects/age-calculator.png",
-        "desc": "My solution for the Age Calculator challenge from Frontend Mentor. I used HTML, CSS and JS."
+        "desc": "My solution for the Age Calculator challenge from Frontend Mentor. I used HTML, CSS and JS.",
+        "github": "https://github.com/aphoyy/oc-projet-7",
+        "tools": ["HTML/CSS", "SCSS", "GitHub", "React", "React Router"]
     }
 
 ]

@@ -1,4 +1,4 @@
-import introSoundSrc from '../assets/sound/introSound.ogg'
+import introSoundSrc from '../assets/sound/introSound.ogg';
 
 const introSound = new Audio(introSoundSrc);
 introSound.load();

@@ -1,20 +1,22 @@
 @import '../../scss/variables';
 
 .banner {
-    width: 600px;
-    height: 500px;
+    width: 700px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
     &__img {
         width: 600px;
+        height: 400px;
         border: 4px double $backgroundHighlight;
     }
     &__wrapper {
         width: 800px;
-        height: 150px;
+        height: 260px;
         padding: 10px;
-        margin-top: 60px;
+        margin-top: 50px;
         border: 5px solid $white;
     }
     &__title {
@@ -22,8 +24,18 @@
         color: $white;
         display: flex;
     }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
     &__text {
         font-size: 1.2rem;
+        width: 70%;
+    }
+    &__list {
+        width: 140px;
+        height: 100px;
+        margin-top: -30px;
     }
     &__github {
         width: 30px;

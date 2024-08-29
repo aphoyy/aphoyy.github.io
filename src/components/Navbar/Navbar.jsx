@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import { NavButton } from '../../components';
-import './Navbar.scss'
+import './Navbar.scss';
 
 export function Navbar({ currentPage }) {
     return (
@@ -30,7 +30,7 @@ export function Navbar({ currentPage }) {
                 isCurrentPage={currentPage === "contact" ? true : false}
             />
         </nav>
-    )
+    );
 }
 
 Navbar.propTypes = {

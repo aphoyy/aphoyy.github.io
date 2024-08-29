@@ -1,4 +1,4 @@
-import { Navbar, Title } from '../components'
+import { Navbar, Title } from '../components';
 import flowey from '../assets/images/flowey.webp';
 import sans from '../assets/images/sans.webp';
 
@@ -21,9 +21,19 @@ export function Skills() {
                     </ul>
                 </div>
             </main>
-            <img className="flowey" src={flowey} alt="flowey" />
-            <img className="sans" src={sans} alt="sans" />
+            <img 
+                className="flowey" 
+                src={flowey}
+                draggable="false"
+                alt="flowey" 
+            />
+            <img 
+                className="sans" 
+                src={sans} 
+                draggable="false" 
+                alt="sans" 
+            />
         </>
 
-    )
+    );
 }

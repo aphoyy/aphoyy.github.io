@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { playSound } from "../scripts/sound";
-import { Title } from "../components";
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { playSound } from '../scripts/sound';
+import { Title } from '../components';
 import '../scss/Root.scss';
 
 export function Root() {
@@ -9,7 +9,9 @@ export function Root() {
     const [currentTitle, setCurrentTitle] = useState('');
     const [isHeartHidden, setIsHeartHidden] = useState(true);
     const [switchPage, setSwitchPage] = useState(false);
-    const title = 'christOphe scherrer'; // Upper case => heart
+
+    // Upper case = heart
+    const title = 'christOphe scherrer';
     let titleIndex = 0;
 
     // Interval at which letters appear
@@ -32,7 +34,7 @@ export function Root() {
             clearInterval(letterInterval);
             setTimeout(() => {
                 document.querySelector('.intro__subtitle').classList.remove('hidden');
-                playSound("introSound");
+                playSound('introSound');
                 enableInteraction();
                 setBlinkInterval();
             }, '350');
@@ -56,9 +58,9 @@ export function Root() {
     // Make the subtitle blink
     function blink() {
         const subtitle = document.querySelector('.intro__subtitle');
-        subtitle.classList.contains('hidden') ?
-        subtitle.classList.remove('hidden') :
-        subtitle.classList.add('hidden');
+        subtitle.classList.contains('hidden')
+            ? subtitle.classList.remove('hidden')
+            : subtitle.classList.add('hidden');
     }
 
     // Clear interval and set switchPage to true
@@ -77,7 +79,9 @@ export function Root() {
     return (
         <main className="intro">
             <Title currentTitle={currentTitle} isHeartHidden={isHeartHidden} />
-            <p className="intro__subtitle hidden">[Cliquez ou appuyez sur entrée pour démarrer]</p>
+            <p className="intro__subtitle hidden">
+                [Cliquez ou appuyez sur entrée pour démarrer]
+            </p>
         </main>
-    )
+    );
 }

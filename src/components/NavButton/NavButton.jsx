@@ -1,9 +1,9 @@
-import { useState } from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
-import orangeHeart from '/src/assets/images/undertale-logo-orange.png'
-import yellowHeart from '/src/assets/images/undertale-logo-yellow.png'
-import './NavButton.scss'
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import orangeHeart from '/src/assets/images/undertale-logo-orange.png';
+import yellowHeart from '/src/assets/images/undertale-logo-yellow.png';
+import './NavButton.scss';
 
 export function NavButton({ icon, text, isCurrentPage, link }) {
     const [heartColor, setHeartColor] = useState("orange");
@@ -14,6 +14,7 @@ export function NavButton({ icon, text, isCurrentPage, link }) {
             className="button"
             onMouseEnter={() => setHeartColor("yellow")}
             onMouseLeave={() => setHeartColor("orange")}
+            draggable="false"
         >
             <span className="button__div">
                 {isCurrentPage === true ? (
@@ -33,7 +34,7 @@ export function NavButton({ icon, text, isCurrentPage, link }) {
             </span>
             <span className="button__text">{text}</span>
         </Link>
-    )
+    );
 }
 
 NavButton.propTypes = {

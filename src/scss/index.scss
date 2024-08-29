@@ -7,8 +7,12 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 21px;
+}
+
 * {
-    font-family: "8BitOperatorPlus-Bold", sans-serif;
+    font-family: UndertaleText, sans-serif;
 }
 
 body {
@@ -18,10 +22,21 @@ body {
 
 main {
     width: 800px;
-    height: 600px;
-    margin: 109px auto 0;
+    height: 700px;
+    margin: 50px auto 0;
     position: relative;
     @include flex-center;
+}
+
+img {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    -webkit-user-drag: none;
+}
+
+li {
+    list-style-type: symbols(cyclic "*")
 }
 
 .hidden {
@@ -90,7 +105,6 @@ main {
     }
     &__list {
         padding-left: 20px;
-        list-style-type: symbols(cyclic "*")
     }
     .email {
         display: flex;

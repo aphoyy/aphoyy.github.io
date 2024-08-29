@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Navbar, Title } from "../components";
+import { useState } from 'react';
+import { Navbar, Title } from '../components';
 import copyLogo from '../assets/images/copy-logo.svg';
 import checkLogo from '../assets/images/check-logo.svg';
 import githubLogo from '../assets/images/github-mark-white.png';
@@ -35,14 +35,27 @@ export function Contact() {
                         - GitHub
                         <img className="box__logo" src={githubLogo} />
                     </a>
-                    <a href="https://www.linkedin.com/in/christophe-scherrer-5725b7322/" className="box__link">
+                    <a 
+                        href="https://www.linkedin.com/in/christophe-scherrer-5725b7322/"
+                        className="box__link"
+                    >
                         - Linkedin
                         <img className="box__logo" src={linkedinLogo} />
                     </a>
                 </div>
             </main>
-            <img className="flowey" src={flowey} alt="flowey" />
-            <img className="sans" src={sans} alt="sans" />
+            <img 
+                className="flowey"
+                src={flowey}
+                draggable="false"
+                alt="flowey"
+            />
+            <img 
+                className="sans"
+                src={sans}
+                draggable="false"
+                alt="sans"
+            />
         </>
-    )
+    );
 }

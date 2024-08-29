@@ -1,13 +1,20 @@
-import PropTypes from 'prop-types'
-import './Banner.scss'
+import PropTypes from 'prop-types';
+import './Banner.scss';
 import gitHubLogo from '../../assets/images/github-mark-white.png';
 
 export function Banner({ currentProject }) {
-    console.log(currentProject.imgUrl)
+    const listTools = currentProject.tools.map((tool) => 
+        <li key={tool}>{tool}</li>
+    );
 
     return (
         <div className="banner">
-            <img className="banner__img" src={currentProject.imgUrl} alt={currentProject.title} />
+            <img 
+                className="banner__img"
+                src={currentProject.imgUrl}
+                draggable="false"
+                alt={currentProject.title}
+            />
             <div className="banner__wrapper">
                 <h1 className="banner__title">
                     {currentProject.title} 
@@ -15,11 +22,13 @@ export function Banner({ currentProject }) {
                         <img className="banner__github" src={gitHubLogo} />
                     </a>
                 </h1>
-                <p className="banner__text">{currentProject.desc}</p>
-                <p>{currentProject.tools}</p>
+                <div className="banner__content">
+                    <p className="banner__text">{currentProject.desc}</p>
+                    <ul className="banner__list">{listTools}</ul>
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
 Banner.propTypes = {
