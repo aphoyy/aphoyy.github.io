@@ -14,7 +14,7 @@ export function Skills() {
                         <li>HTML/CSS</li>
                         <li>JavaScript</li>
                         <li>React</li>
-                        <li>Scss</li>
+                        <li>Sass</li>
                         <li>Git/GitHub</li>
                         <li>Responsive design</li>
                         <li>SEO</li>

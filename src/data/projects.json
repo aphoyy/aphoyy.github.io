@@ -1,17 +1,18 @@
 [
     {
-        "title": "Kasa - OpenClassrooms",
-        "imgUrl": "/assets/projects/kasa.png",
-        "desc": "React project for an appartment rental company",
-        "github": "https://github.com/aphoyy/oc-projet-7",
-        "tools": ["HTML/CSS", "SCSS", "GitHub", "React", "React Router"]
+        "title": "Chess",
+        "imgUrl": "/assets/projects/chess.jpeg",
+        "desc": "Un jeu d'échecs à deux joueurs en utilisant uniquement JavaScript de base",
+        "github": "https://github.com/aphoyy/chess",
+        "tools": ["HTML", "CSS", "JavaScript"]
     },
+
     {
-        "title": "QR Code",
-        "imgUrl": "/assets/projects/qr-code.png",
-        "desc": "My solution for the QR Code challenge from Frontend Mentor",
-        "github": "https://github.com/aphoyy/oc-projet-7",
-        "tools": ["HTML/CSS", "SCSS", "GitHub", "React", "React Router", "Vite", "npm"]
+        "title": "Argent Bank",
+        "imgUrl": "/assets/projects/argent-bank.jpeg",
+        "desc": "Site bancaire avec une connexion à une API backend et une page utilisateur. Il y a aussi un swagger pour les prochains ajouts du site.",
+        "github": "https://github.com/aphoyy/oc-projet-10",
+        "tools": ["HTML/CSS", "SCSS", "React", "React Router", "Redux", "Swagger"]
     },
     {
         "title": "Age Calculator",
@@ -19,6 +20,12 @@
         "desc": "My solution for the Age Calculator challenge from Frontend Mentor. I used HTML, CSS and JS.",
         "github": "https://github.com/aphoyy/oc-projet-7",
         "tools": ["HTML/CSS", "SCSS", "GitHub", "React", "React Router"]
+    },
+    {
+        "title": "Tic Tac Toe",
+        "imgUrl": "/assets/projects/tic-tac-toe.jpeg",
+        "desc": "Un morpion contre l'ordinateur qui a une difficulté réglable",
+        "github": "https://github.com/aphoyy/tic-tac-toe",
+        "tools": ["HTML", "CSS", "JavaScript"]
     }
-
 ]

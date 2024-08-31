@@ -7,19 +7,19 @@ export function Navbar({ currentPage }) {
         <nav className="nav">
             <NavButton
                 icon="<>"
-                text="PROJECTS"
+                text="PROJETS"
                 link="/projects"
                 isCurrentPage={currentPage === "projects" ? true : false}
             />
             <NavButton
                 icon="%"
-                text="ABOUT"
+                text="A&nbsp;&nbsp;&nbsp;PROPOS" // Multiples spaces because font makes space too small
                 link="/about"
                 isCurrentPage={currentPage === "about" ? true : false}
             />
             <NavButton
                 icon="&"
-                text="SKILLS"
+                text="COMPÉTENCES"
                 link="/skills"
                 isCurrentPage={currentPage === "skills" ? true : false}
             />

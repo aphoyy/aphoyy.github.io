@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Navbar, Title } from '../components';
-import copyLogo from '../assets/images/copy-logo.svg';
-import checkLogo from '../assets/images/check-logo.svg';
+import copyLogo from '../assets/images/clipboard-copy.png';
+import checkLogo from '../assets/images/clipboard-success.png';
 import githubLogo from '../assets/images/github-mark-white.png';
 import linkedinLogo from '../assets/images/linkedin-logo.webp';
 import flowey from '../assets/images/flowey.webp';

@@ -11,11 +11,10 @@ export function About() {
                 <div className="box__wrapper">
                     <h2 className="box__subtitle">A propos de moi :</h2>
                     <p>
-                        Je suis passionné par développement, j&apos;ai commencé en autodidacte en septembre 2023 puis avec 
-                        OpenClassrooms d&apos;avril à septembre 2024 en tant qu&apos;intégrateur web.
+                        Passionné de jeux-vidéos et de nouvelles technologies, j&apos;ai commencé le développement en autodidacte en septembre 2023 puis j&apos;ai effectué une formation d&apos;Intégrateur Web d&apos;OpenClassrooms afin de consolider mes bases.
                     </p>
                     <br></br>
-                    <p>Je recherche désormais une alternance dans le back-end afin de devenir développeur full-stack</p>
+                    <p>Suite à cela, je souhaite désormais m&apos;intéresser au back-end et je suis à la recherche d&apos;une entreprise pour y faire mon alternance.</p>
                 </div>
             </main>
             <img 

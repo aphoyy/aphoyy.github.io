@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Banner, Navbar } from '../components';
 import projects from '../data/projects.json';
+import leftBanner from '/public/assets/left-side-banner.jpg';
+import rightBanner from '/public/assets/right-side-banner.jpg';
 
 export function Projects() {
     const [currentProject, setCurrentProject] = useState(projects[0]);
@@ -28,20 +30,8 @@ export function Projects() {
             <Navbar currentPage="projects" />
             <main>
                 <Banner currentProject={currentProject} />
-                <div className="background">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+                <img className="dogs left-banner" src={leftBanner} onClick={() => handleCarrousel("reverse")} />
+                <img className="dogs right-banner" src={rightBanner} onClick={() => handleCarrousel()} />
                 <div 
                     className="arrow arrow--left"
                     onClick={() => handleCarrousel("reverse")}

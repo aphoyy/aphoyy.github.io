@@ -28,3 +28,19 @@
         grid-column: 1;
     }
 }
+
+@media (max-width: 1400px) {
+    .title__text {
+        font-size: 1.4rem;
+    }
+    .title__heart {
+        left: 205px;
+    } 
+}
+
+@media (max-width: 800px) {
+    .title__heart {
+        left: 200px;
+    }
+}
+

@@ -1,8 +1,27 @@
 @import '../../scss/variables';
 
 .nav {
-    width: 60%;
-    height: 60%;
-    margin: 70px auto 0;
-    @include flex-between;
+    width: 1400px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px auto 0;
+}
+
+@media (max-width: 1400px) {
+    .nav {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav {
+        width: 80vw;
+        margin: 20px auto 0 auto;
+        height: 240px;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

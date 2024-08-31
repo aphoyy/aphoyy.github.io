@@ -1,27 +1,27 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import orangeHeart from '/src/assets/images/undertale-logo-orange.png';
+import redHeart from '/src/assets/images/undertale-logo.png';
 import yellowHeart from '/src/assets/images/undertale-logo-yellow.png';
 import './NavButton.scss';
 
 export function NavButton({ icon, text, isCurrentPage, link }) {
-    const [heartColor, setHeartColor] = useState("orange");
+    const [heartColor, setHeartColor] = useState('red');
     // Switch heart color if hover
     return (
         <Link
             to={link}
             className="button"
-            onMouseEnter={() => setHeartColor("yellow")}
-            onMouseLeave={() => setHeartColor("orange")}
+            onMouseEnter={() => setHeartColor('yellow')}
+            onMouseLeave={() => setHeartColor('red')}
             draggable="false"
         >
             <span className="button__div">
                 {isCurrentPage === true ? (
                     <>
                         <img 
-                            className={heartColor === "orange" ? "button__heart" : "button__heart hidden"}
-                            src={orangeHeart}
+                            className={heartColor === "red" ? "button__heart" : "button__heart hidden"}
+                            src={redHeart}
                         />
                         <img
                             className={heartColor === "yellow" ? "button__heart" : "button__heart hidden"}

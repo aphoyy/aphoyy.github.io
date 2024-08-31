@@ -2,7 +2,8 @@
 
 .button {
     cursor: pointer;
-    height: 70;
+    max-width: 500px;
+    height: 70px;
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
@@ -38,10 +39,24 @@
         border-color: $menuSelected;
         background-color: unset;
     }
-    & ~ .button {
-        margin-left: 30px;
-    }
     &.active {
         border: 4px double;
+    }
+}
+
+@media (max-width: 1400px) {
+    .button {
+        height: 50px;
+        &__text, &__div {
+            font-size: 30px;
+        }
+        &__text {
+            letter-spacing: -2px;
+        }
+        &__heart {
+            width: 24px;
+            height: 24px;
+            bottom: -14px;
+        }
     }
 }

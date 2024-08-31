@@ -11,6 +11,10 @@ html {
     font-size: 21px;
 }
 
+html, body {
+    height: 100%;
+}
+
 * {
     font-family: UndertaleText, sans-serif;
 }
@@ -21,9 +25,10 @@ body {
 }
 
 main {
-    width: 800px;
+    width: 100vw;
+    max-width: 800px;
     height: 700px;
-    margin: 50px auto 0;
+    margin: 40px auto 0;
     position: relative;
     @include flex-center;
 }
@@ -65,10 +70,10 @@ li {
     color: $white;
     cursor: pointer;
     &--left {
-        left: 2%;
+        left: 80px;
     }
     &--right {
-        right: 2%;
+        right: 80px;
     }
 }
 
@@ -112,7 +117,7 @@ li {
         &__copy {
             width: 30px;
             height: 30px;
-            margin-left: 8px;
+            margin-left: 4px;
         }
     }
 }
@@ -130,4 +135,48 @@ li {
     bottom: 0px;
     left: 15vw;
     width: 280px;
+}
+
+.left-banner {
+    height: 400px;
+    position: absolute;
+    left: -345px;
+    top: 30px;
+}
+
+.right-banner {
+    height: 400px;
+    position: absolute;
+    right: -345px;
+    top: 30px;
+}
+
+.dogs {
+    cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+    .box {
+        margin-top: 15px;
+        width: 80vw;
+
+        &__wrapper {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .box {
+        font-size: 16px;
+        &__subtitle {
+            font-size: 20px;
+        }
+        &__link {
+            font-size: 16px;
+        }
+    }
+    .sans, .flowey {
+        display: none;
+    }
 }
