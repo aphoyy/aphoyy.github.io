@@ -14,10 +14,18 @@ export function Skills() {
                         <li>HTML/CSS</li>
                         <li>JavaScript</li>
                         <li>React</li>
+                        <li>Redux</li>
                         <li>Sass</li>
-                        <li>Git/GitHub</li>
                         <li>Responsive design</li>
                         <li>SEO</li>
+                    </ul>
+                    <h2 className="box__subtitle">Outils :</h2>
+                    <ul className="box__list">
+                        <li>Git/GitHub</li>
+                        <li>Vite</li>
+                        <li>Create React App</li>
+                        <li>Trello/Notion</li>
+                        <li>Slack</li>
                     </ul>
                 </div>
             </main>

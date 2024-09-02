@@ -2,6 +2,7 @@
 
 .intro {
     width: 100vw;
+    max-width: unset;
     height: 100svh;
     margin: 0;
     @include flex-center;

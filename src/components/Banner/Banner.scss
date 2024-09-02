@@ -6,16 +6,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px auto 0;
     &__img {
         width: 525px;
         height: 350px;
-        border: 2px solid $white;
+        margin-top: 73px;
+    }
+    &__nav {
+        width: 280px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px auto 20px;
     }
     &__wrapper {
         width: 800px;
         height: auto;
         padding: 8px 15px 15px 15px;
-        margin-top: 50px;
         border: 5px solid $white;
     }
     &__title {
@@ -46,6 +53,23 @@
         margin-top: 4px;
         margin-left: 10px;
     }
+}
+
+.test {
+    position: absolute;
+    bottom: 345px;
+    width: 315px;
+    height: 210px;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.left {
+    left: 450px
+}
+
+.right {
+    right: 450px;
 }
 
 .contact {
