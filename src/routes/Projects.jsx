@@ -3,9 +3,6 @@ import leftBanner from '../assets/images/left-side-banner.jpg';
 import rightBanner from '../assets/images/right-side-banner.jpg';
 
 export function Projects() {
-
-
-
     return (
         <>
             <Navbar currentPage="projects" />

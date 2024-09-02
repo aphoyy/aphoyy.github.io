@@ -6,8 +6,8 @@ import yellowHeart from '/src/assets/images/undertale-logo-yellow.png';
 import './NavButton.scss';
 
 export function NavButton({ icon, text, isCurrentPage, link }) {
+    // State variable to swap heart color
     const [heartColor, setHeartColor] = useState('red');
-    // Switch heart color if hover
     return (
         <Link
             to={link}

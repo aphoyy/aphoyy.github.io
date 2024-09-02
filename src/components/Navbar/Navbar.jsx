@@ -13,7 +13,7 @@ export function Navbar({ currentPage }) {
             />
             <NavButton
                 icon="%"
-                text="A&nbsp;&nbsp;&nbsp;PROPOS" // Multiples spaces because font makes space too small
+                text="A&nbsp;&nbsp;&nbsp;PROPOS"
                 link="/about"
                 isCurrentPage={currentPage === "about" ? true : false}
             />

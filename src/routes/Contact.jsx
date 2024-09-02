@@ -8,8 +8,10 @@ import flowey from '../assets/images/flowey.webp';
 import sans from '../assets/images/sans.webp';
 
 export function Contact() {
+    // State variable to swap the logo of the clipboard
     const [clipboardLogo, setClipboardLogo] = useState(copyLogo);
 
+    // Copy email to clipboard and display a success logo
     function copyEmail() {
         navigator.clipboard.writeText('christophe.scherrer4@gmail.com');
         setClipboardLogo(checkLogo);
