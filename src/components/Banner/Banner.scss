@@ -94,8 +94,6 @@
     }
 }
 
-
-
 .relative {
     position: relative;
 }
@@ -108,11 +106,9 @@
     right: -125px;
 }
 
-
-
 @media (max-width: 800px) {
     .banner {
-        .test {
+        .banner__img--small {
             display: none;
         }
         &__img {

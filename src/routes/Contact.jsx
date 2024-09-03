@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Navbar, Title } from '../components';
-import copyLogo from '../assets/images/icons/clipboard-copy.png';
-import checkLogo from '../assets/images/icons/clipboard-success.png';
+import copyLogo from '../assets/images/icons/copy-logo.svg';
+import checkLogo from '../assets/images/icons/copy-success-logo.svg';
 import githubLogo from '../assets/images/icons/github-mark-white.png';
 import linkedinLogo from '../assets/images/icons/linkedin-logo.webp';
 import sans from '../assets/images/sans.png';
-import sansDialogue from '../assets/images/dialogue/dialogue-sans.png';
+import sansDialogue from '../assets/images/dialogue/dialogue-sans.gif';
 
 export function Contact() {
     // State variable to swap the logo of the clipboard
@@ -20,7 +20,7 @@ export function Contact() {
     return (
         <>
             <Navbar currentPage="contact" />
-            <main className="box">
+            <main className="box contact">
                 <Title />
                 <div className="box__wrapper">
                     <h2 className="box__subtitle">Adresse Email :</h2>

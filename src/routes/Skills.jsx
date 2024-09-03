@@ -1,12 +1,12 @@
 import { Navbar, Title } from '../components';
 import papyrus from '../assets/images/papyrus.webp';
-import papyrusDialogue from '../assets/images/dialogue/dialogue-papyrus.png';
+import papyrusDialogue from '../assets/images/dialogue/dialogue-papyrus.gif';
 
 export function Skills() {
     return (
         <>
             <Navbar currentPage="skills" />
-            <main className="box">
+            <main className="box skills">
                 <Title />
                 <div className="box__wrapper">
                     <h2 className="box__subtitle">Mes compétences :</h2>

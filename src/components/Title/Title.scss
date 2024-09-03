@@ -44,3 +44,12 @@
     }
 }
 
+@media (max-width: 380px) {
+    .title__text {
+        font-size: 1.2rem;
+    }
+    .title__heart {
+        left: 170px;
+        top: 24px;
+    }
+}

@@ -47,6 +47,7 @@
 @media (max-width: 1400px) {
     .button {
         height: 50px;
+        margin: 0 4px;
         &__text, &__div {
             font-size: 30px;
         }

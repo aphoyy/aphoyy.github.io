@@ -5,7 +5,7 @@ export function About() {
     return (
         <>
             <Navbar currentPage="about" />
-            <main className="box">
+            <main className="box about">
                 <Title />
                 <div className="box__wrapper">
                     <h2 className="box__subtitle">A propos de moi :</h2>

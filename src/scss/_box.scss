@@ -6,6 +6,7 @@
     align-items: center;
     flex-direction: column;
     &__wrapper {
+        height: auto;
         border: $white solid 5px;
         background-color: $black;
         padding: 14px 20px 20px 20px;
@@ -36,10 +37,14 @@
     .email {
         display: flex;
         margin-bottom: 30px;
+        &__title {
+            line-break: anywhere;
+        }
         &__copy {
             width: 30px;
             height: 30px;
-            margin-left: 4px;
+            margin-left: 8px;
+            cursor: pointer;
         }
     }
 }
@@ -47,22 +52,36 @@
 @media (max-width: 1400px) {
     .box {
         margin-top: 15px;
-        // width: 80vw;
-
+        height: 700px;
         &__wrapper {
             margin-top: 25px;
         }
+    }
+    .box.contact {
+        height: 500px;
+    }
+    .box.skills {
+        height: 500px;
+    }
+    .box.about {
+        height: auto;
     }
 }
 
 @media (max-width: 800px) {
     .box {
+        padding: 0 20px 20px 20px;
+        width: 100%;
         font-size: 16px;
+        align-items: start;
         &__subtitle {
             font-size: 20px;
         }
         &__link {
             font-size: 16px;
+        }
+        &__wrapper {
+            width: 100%;
         }
     }
     .sans, .flowey {

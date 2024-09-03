@@ -10,19 +10,15 @@ img {
     bottom: 0px;
     width: 280px;
     &--sans {
-        left: 18%;
-
-    }
-    &--flowey {
-        left: 72vw;
+        left: 320px;
     }
     &--mettaton {
         width: 400px;
-        left: 190px;
+        left: 50px;
     }
     &--papyrus {
-        width: 14%;
-        right: 25%;
+        width: 250px;
+        right: 430px;
     }
 }
 
@@ -31,13 +27,12 @@ img {
     position: absolute;
     z-index: 2;
     &--sans {
-        bottom: 240px;
-        left: 31%;
+        left: 560px;
+        bottom: 250px;
     }
     &--papyrus {
-        width: 23%;
-        right: 7%;
-        bottom: 35%;
+        right: 80px;
+        bottom: 290px;
     }
 }
 
@@ -50,5 +45,117 @@ img {
     }
     &--right {
         right: -405px;
+    }
+}
+
+// MEDIA QUERIES
+
+@media (max-width: 1700px) {
+    .character {
+        &--papyrus {
+            width: 200px;
+            right: 0;
+        }
+        &--mettaton {
+            width: 400px;
+            left: 0px;
+        }
+    }
+    .dialogue {
+        &--papyrus {
+            width: 280px;
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .character {
+        &--mettaton {
+            width: 300px;
+            left: 0;
+        }
+        &--sans {
+            width: 200px;
+            left: 200px;
+        }
+    }   
+    .dialogue {
+        &--sans {
+            width: 300px;
+            left: 380px;
+            bottom: 170px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .character {
+        &--papyrus {
+            width: 150px;
+            left: 20px;
+            bottom: -40px;
+        }
+        &--mettaton {
+            width: 250px;
+        }
+    }
+    .dialogue {
+        &--papyrus {
+            width: 280px;
+            bottom: 20px;
+            left: 150px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .character {
+        &--papyrus {
+            width: 150px;
+            left: 20px;
+            bottom: -100px;
+        }
+        &--mettaton {
+            display: none;
+        }
+        &--sans {
+            width: 200px;
+            left: unset;
+            right: 10px;
+            bottom: -240px;
+        }
+    }
+    .dialogue {
+        &--papyrus {
+            width: 250px;
+            left: 110px;
+            bottom: 70px;
+        }
+        &--sans {
+            width: 300px;
+            left: unset;
+            right: 30px;
+            bottom: 30px;
+        }
+    }
+    .projects__dog {
+        display: none;
+    }
+}
+
+@media (max-width: 621px) {
+    .character {
+        &--papyrus {
+            width: 150px;
+            left: 20px;
+            bottom: -150px;
+        }
+    }
+    .dialogue {
+        &--papyrus {
+            width: 220px;
+            left: 110px;
+            bottom: 20px;
+        }
     }
 }
