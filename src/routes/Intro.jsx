@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { playSound } from '../scripts/sound';
 import { Title } from '../components';
-import '../scss/Root.scss';
+import '../scss/intro.scss';
 
-export function Root() {
+export function Intro() {
     const navigate = useNavigate();
     const [currentTitle, setCurrentTitle] = useState('');
     const [isHeartHidden, setIsHeartHidden] = useState(true);
@@ -34,7 +33,6 @@ export function Root() {
             clearInterval(letterInterval);
             setTimeout(() => {
                 document.querySelector('.intro__subtitle').classList.remove('hidden');
-                playSound('introSound');
                 enableInteraction();
                 setBlinkInterval();
             }, '350');

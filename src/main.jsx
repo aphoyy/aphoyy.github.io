@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
-import { Root, Projects, About, Skills, Contact } from './routes';
+import { Intro, Projects, About, Skills, Contact } from './routes';
 import './scss/index.scss';
 import './assets/fonts/DTM-Sans.otf';
 import './assets/fonts/MERCY.otf';
@@ -10,7 +10,7 @@ import './assets/fonts/monsterfriendforepro.otf';
 const router = createHashRouter([
     {
         path: "/",
-        element: <Root />,
+        element: <Intro />,
     },
     {
         path: "/projects",

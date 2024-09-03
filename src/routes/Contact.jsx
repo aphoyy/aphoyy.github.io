@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Navbar, Title } from '../components';
-import copyLogo from '../assets/images/clipboard-copy.png';
-import checkLogo from '../assets/images/clipboard-success.png';
-import githubLogo from '../assets/images/github-mark-white.png';
-import linkedinLogo from '../assets/images/linkedin-logo.webp';
-import flowey from '../assets/images/flowey.webp';
-import sans from '../assets/images/sans.webp';
+import copyLogo from '../assets/images/icons/clipboard-copy.png';
+import checkLogo from '../assets/images/icons/clipboard-success.png';
+import githubLogo from '../assets/images/icons/github-mark-white.png';
+import linkedinLogo from '../assets/images/icons/linkedin-logo.webp';
+import sans from '../assets/images/sans.png';
+import sansDialogue from '../assets/images/dialogue/dialogue-sans.png';
 
 export function Contact() {
     // State variable to swap the logo of the clipboard
@@ -47,16 +47,15 @@ export function Contact() {
                 </div>
             </main>
             <img 
-                className="flowey"
-                src={flowey}
-                draggable="false"
-                alt="flowey"
-            />
-            <img 
-                className="sans"
+                className="character character--sans" 
                 src={sans}
                 draggable="false"
                 alt="sans"
+            />
+            <img 
+                className="dialogue dialogue--sans"
+                src={sansDialogue}
+                alt="Merci d'avoir lu"
             />
         </>
     );

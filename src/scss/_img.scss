@@ -1,0 +1,54 @@
+img {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    -webkit-user-drag: none;
+}
+
+.character {
+    position: absolute;
+    bottom: 0px;
+    width: 280px;
+    &--sans {
+        left: 18%;
+
+    }
+    &--flowey {
+        left: 72vw;
+    }
+    &--mettaton {
+        width: 400px;
+        left: 190px;
+    }
+    &--papyrus {
+        width: 14%;
+        right: 25%;
+    }
+}
+
+.dialogue {
+    width: 450px;
+    position: absolute;
+    z-index: 2;
+    &--sans {
+        bottom: 240px;
+        left: 31%;
+    }
+    &--papyrus {
+        width: 23%;
+        right: 7%;
+        bottom: 35%;
+    }
+}
+
+.projects__dog {
+    position: absolute;
+    height: 400px;
+    top: 30px;
+    &--left {
+        left: -405px;
+    }
+    &--right {
+        right: -405px;
+    }
+}

@@ -1,16 +1,27 @@
 @import '../../scss/variables';
 
 .banner {
-    width: 700px;
-    height: 550px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px auto 0;
     &__img {
-        width: 525px;
-        height: 350px;
-        margin-top: 73px;
+        width: 90%;
+        max-width: 525px;
+        aspect-ratio: 3 / 2;
+        margin: 73px 5% 0 5%;
+        &--small {
+            position: absolute;
+            top: 0;
+            top: 70px;
+            width: 315px;
+            height: 210px;
+            opacity: 0.4;
+            z-index: -1;
+        }
     }
     &__nav {
         width: 280px;
@@ -19,8 +30,20 @@
         align-items: center;
         margin: 20px auto 20px;
     }
+    &__arrow {
+        font-size: 50px;
+        color: $white;
+        cursor: pointer;
+        &--left {
+            left: 80px;
+        }
+        &--right {
+            right: 80px;
+        }
+    }
     &__wrapper {
-        width: 800px;
+        width: 100%;
+        max-width: 800px;
         height: auto;
         padding: 8px 15px 15px 15px;
         border: 5px solid $white;
@@ -53,38 +76,56 @@
         margin-top: 4px;
         margin-left: 10px;
     }
+    &__dot-list {
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__dot {
+        width: 13px;
+        height: 13px;
+        list-style-type: none;
+        background-color: rgba(255, 255, 255, 0.397);
+        cursor: pointer;
+        &.selected {
+            background-color: white;
+            border: 2px solid white;
+        }
+    }
 }
 
-.test {
-    position: absolute;
-    bottom: 345px;
-    width: 315px;
-    height: 210px;
-    opacity: 0.4;
-    z-index: -1;
+
+
+.relative {
+    position: relative;
 }
 
 .left {
-    left: 450px
+    left: -125px;
 }
 
 .right {
-    right: 450px;
+    right: -125px;
 }
 
-.contact {
-    position: relative;
-    display: flex;
-    &__copy {
-        width: 30px;
-        height: 30px;
-        margin-left: 8px;
-    }
-    &__check {
-        position: absolute;
-        right: -10px;
-        bottom: 15px;
-        width: 30px;
-        height: 30px;
+
+
+@media (max-width: 800px) {
+    .banner {
+        .test {
+            display: none;
+        }
+        &__img {
+            margin-top: 15px;
+        }
+        &__content {
+            flex-direction: column;
+        }
+        &__list {
+            margin: 15px 0 0 20px;
+        }
+        &__wrapper {
+            width: 90%;
+        }
     }
 }

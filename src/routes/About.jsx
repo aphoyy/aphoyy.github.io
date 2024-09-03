@@ -1,6 +1,5 @@
 import { Navbar, Title } from '../components';
-import flowey from '../assets/images/flowey.webp';
-import sans from '../assets/images/sans.webp';
+import mettaton from '../assets/images/mettaton.webp';
 
 export function About() {
     return (
@@ -22,16 +21,10 @@ export function About() {
                 </div>
             </main>
             <img 
-                className="flowey"
-                src={flowey}
+                className="character character--mettaton" 
+                src={mettaton}
                 draggable="false"
-                alt="flowey"
-            />
-            <img 
-                className="sans"
-                src={sans}
-                draggable="false"
-                alt="sans"
+                alt="mettaton"
             />
         </>
     );

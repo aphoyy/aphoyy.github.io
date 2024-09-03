@@ -6,10 +6,18 @@ export function Projects() {
     return (
         <>
             <Navbar currentPage="projects" />
-            <main>
+            <main className="projects">
                 <Banner />
-                <img className="dogs left-banner" src={leftBanner} />
-                <img className="dogs right-banner" src={rightBanner} />
+                <img 
+                    className="projects__dog projects__dog--left"
+                    src={leftBanner}
+                    alt="Undertale dog in armor with a spear"
+                />
+                <img
+                    className="projects__dog projects__dog--right"
+                    src={rightBanner}
+                    alt="Undertale dog in armor with a shield and a sword"
+                />
             </main>
         </>
     );

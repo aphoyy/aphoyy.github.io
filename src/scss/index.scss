@@ -1,4 +1,6 @@
 @import './variables';
+@import './box';
+@import './img';
 
 *, *::before, *::after {
     margin: 0;
@@ -8,11 +10,7 @@
 }
 
 html {
-    font-size: 21px;
-}
-
-html {
-    height: 100%;
+    font-size: 21px; // rem
 }
 
 * {
@@ -25,176 +23,17 @@ body {
 }
 
 main {
+    position: relative;
     width: 100vw;
     max-width: 800px;
-    height: 700px;
+    height: auto;
     margin: 40px auto 0;
-    position: relative;
-}
-
-img {
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-    -webkit-user-drag: none;
 }
 
 li {
-    list-style-type: symbols(cyclic "*")
+    list-style-type: symbols(cyclic "*");
 }
 
 .hidden {
     visibility: hidden !important;
-}
-
-.background {
-    width: 1000px;
-    height: 450px;
-    z-index: -1;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    bottom: 31%;
-    div {
-        width: 16.6%;
-        height: 50%;
-        border: 1px solid $backgroundHighlight;
-    }
-}
-
-.arrow {
-    font-size: 50px;
-    color: $white;
-    cursor: pointer;
-    &--left {
-        left: 80px;
-    }
-    &--right {
-        right: 80px;
-    }
-}
-
-.list {
-    padding-left: 20px;
-    list-style-type: symbols(cyclic "*")
-}
-
-.box {
-    margin-top: 80px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    &__wrapper {
-        background-color: $black;
-        border: $white solid 5px;
-        padding: 20px;
-        margin-top: 40px;
-    }
-    &__subtitle {
-        color: $white;
-        margin-bottom: 4px;
-    }
-    &__link {
-        font-size: 1.17rem;
-        color: $text;
-        text-decoration: none;
-        padding: 2px 0;
-        display: flex;
-        align-items: center;
-    }
-    &__logo {
-        width: 30px;
-        margin-left: 8px;
-    }
-    &__list {
-        padding-left: 20px;
-    }
-    .email {
-        display: flex;
-        margin-bottom: 30px;
-        &__copy {
-            width: 30px;
-            height: 30px;
-            margin-left: 4px;
-        }
-    }
-}
-
-.flowey {
-    position: absolute;
-    bottom: 0px;
-    left: 72vw;
-    width: 280px;
-    height: 300px;
-}
-
-.sans {
-    position: absolute;
-    bottom: 0px;
-    left: 15vw;
-    width: 280px;
-}
-
-.left-banner {
-    height: 400px;
-    position: absolute;
-    left: -405px;
-    top: 30px;
-}
-
-.right-banner {
-    height: 400px;
-    position: absolute;
-    right: -405px;
-    top: 30px;
-}
-
-.dogs {
-    cursor: pointer;
-}
-
-.project__list {
-    width: 120px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.dot {
-    width: 13px;
-    height: 13px;
-    list-style-type: none;
-    background-color: rgba(255, 255, 255, 0.397);
-    cursor: pointer;
-}
-
-.dot.selected {
-    background-color: white;
-    border: 2px solid white;
-}
-
-@media (max-width: 1400px) {
-    .box {
-        margin-top: 15px;
-        width: 80vw;
-
-        &__wrapper {
-            margin-top: 25px;
-        }
-    }
-}
-
-@media (max-width: 800px) {
-    .box {
-        font-size: 16px;
-        &__subtitle {
-            font-size: 20px;
-        }
-        &__link {
-            font-size: 16px;
-        }
-    }
-    .sans, .flowey {
-        display: none;
-    }
 }

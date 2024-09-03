@@ -1,6 +1,6 @@
 import { Navbar, Title } from '../components';
-import flowey from '../assets/images/flowey.webp';
-import sans from '../assets/images/sans.webp';
+import papyrus from '../assets/images/papyrus.webp';
+import papyrusDialogue from '../assets/images/dialogue/dialogue-papyrus.png';
 
 export function Skills() {
     return (
@@ -30,16 +30,15 @@ export function Skills() {
                 </div>
             </main>
             <img 
-                className="flowey" 
-                src={flowey}
+                className="character character--papyrus" 
+                src={papyrus}
                 draggable="false"
-                alt="flowey" 
+                alt="papyrus" 
             />
             <img 
-                className="sans" 
-                src={sans} 
-                draggable="false" 
-                alt="sans" 
+                className="dialogue dialogue--papyrus"
+                src={papyrusDialogue}
+                alt="Merci d'avoir lu"
             />
         </>
 

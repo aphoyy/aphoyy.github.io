@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import redHeart from '/src/assets/images/undertale-logo.png';
-import yellowHeart from '/src/assets/images/undertale-logo-yellow.png';
+import redHeart from '/src/assets/images/icons/undertale-logo.png';
+import yellowHeart from '/src/assets/images/icons/undertale-logo-yellow.png';
 import './NavButton.scss';
 
 export function NavButton({ icon, text, isCurrentPage, link }) {
@@ -22,10 +22,12 @@ export function NavButton({ icon, text, isCurrentPage, link }) {
                         <img 
                             className={heartColor === "red" ? "button__heart" : "button__heart hidden"}
                             src={redHeart}
+                            alt="red heart icon"
                         />
                         <img
                             className={heartColor === "yellow" ? "button__heart" : "button__heart hidden"}
                             src={yellowHeart}
+                            alt="yellow heart icon"
                         />
                     </>
                 ) : (

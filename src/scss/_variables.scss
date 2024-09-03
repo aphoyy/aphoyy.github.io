@@ -4,7 +4,6 @@ $shadow: #848484;
 $text: #808080;
 $menu : #ff7f27;
 $menuSelected : #ffff00;
-$backgroundHighlight: #3CB24E;
 
 @mixin flex-center {
     display: flex;
@@ -18,21 +17,25 @@ $backgroundHighlight: #3CB24E;
     align-items: center;
 }
 
+// Title font to use with UndertaleFront
 @font-face {
     font-family: UndertaleBack;
     src: local("monsterfriendbackpro"), url("../assets/fonts/monsterfriendbackpro.otf") format("opentype");
 }
 
+// Title font to use with UndertaleBack
 @font-face {
     font-family: UndertaleFront;
     src: local("monsterfriendforepro"), url("../assets/fonts/monsterfriendforepro.otf") format("opentype");
 }
 
+// Font for all text
 @font-face {
     font-family: UndertaleText;
     src: local("DTM-Sans"), url("../assets/fonts/DTM-Sans.otf") format("opentype");
 }
 
+// Font for nav buttons
 @font-face {
     font-family: MERCY;
     src: local("MERCY"), url("../assets/fonts/MERCY.otf") format("opentype");

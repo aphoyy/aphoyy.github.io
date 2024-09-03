@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import projects from '../../data/projects.json';
+import gitHubLogo from '../../assets/images/icons/github-mark-white.png';
 import './Banner.scss';
-import gitHubLogo from '../../assets/images/github-mark-white.png';
 
 export function Banner() {
     // State variable to track the index of the currently displayed project
@@ -35,7 +35,7 @@ export function Banner() {
     for (let i = 0; i < projects.length; i++) {
         dotList.push(
             <li
-                className={currentProjectIndex === i ? "dot selected" : "dot"}
+                className={currentProjectIndex === i ? "banner__dot selected" : "banner__dot"}
                 key={"dot" + i}
                 onClick={() => setCurrentProjectIndex(i)}
             >
@@ -51,35 +51,34 @@ export function Banner() {
     return (
         <div className="banner">
             {/* Main and secondaries banner images */}
-            <img 
-                className="banner__img"
-                src={currentProject.imgUrl}
-                draggable="false"
-                alt={currentProject.title}
-            />
-            <img 
-                className="banner__img test left"
-                src={previousProject.imgUrl}
-                draggable="false"
-                alt={previousProject.title}
-            />
-            <img 
-                className="banner__img test right"
-                src={nextProject.imgUrl}
-                draggable="false"
-                alt={nextProject.title}
-            />
+            <div className='relative'>
+                <img
+                    className="banner__img middle"
+                    src={currentProject.imgUrl}
+                    alt={currentProject.title}
+                />
+                <img
+                    className="banner__img banner__img--small left"
+                    src={previousProject.imgUrl}
+                    alt={previousProject.title}
+                />
+                <img 
+                    className="banner__img banner__img--small right"
+                    src={nextProject.imgUrl}
+                    alt={nextProject.title}
+                />
+            </div>
             {/* Navigation arrows and dots */}
             <nav className="banner__nav">
                 <div 
-                    className="arrow arrow--left"
+                    className="banner__arrow banner__arrow--left"
                     onClick={() => handleCarrousel("reverse")}
                 >
                     &lt;
                 </div>
-                <ul className="project__list">{dotList}</ul>
+                <ul className="banner__dot-list">{dotList}</ul>
                 <div
-                    className="arrow arrow--right"
+                    className="banner__arrow banner__arrow--right"
                     onClick={() => handleCarrousel()}
                 >
                     &gt;
@@ -90,7 +89,7 @@ export function Banner() {
                 <h1 className="banner__title">
                     {currentProject.title} 
                     <a href={currentProject.github} target="_blank">
-                        <img className="banner__github" src={gitHubLogo} />
+                        <img className="banner__github" src={gitHubLogo} alt="GitHub logo" />
                     </a>
                 </h1>
                 <div className="banner__content">
