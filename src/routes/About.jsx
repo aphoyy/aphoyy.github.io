@@ -10,7 +10,7 @@ export function About() {
                 <div className="box__wrapper">
                     <h2 className="box__subtitle">A propos de moi :</h2>
                     <p>
-                        Passionné par les jeux-vidéos et les nouvelles technologies, j&apos;ai débuté le développement en autodidacte en septembre 2023. 
+                        Passionné par les jeux vidéo et les nouvelles technologies, j&apos;ai débuté le développement en autodidacte en septembre 2023. 
                         Pour renforcer mes compétences, j&apos;ai suivi une formation d&apos;Intégrateur Web chez OpenClassrooms, où j&apos;ai acquis une solide maîtrise des bases du front-end.
                     </p>
                     <br></br>

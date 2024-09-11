@@ -2,14 +2,14 @@
     {
         "title": "Argent Bank - OpenClassrooms",
         "imgUrl": "/assets/projects/argent-bank.jpeg",
-        "desc": "Site bancaire avec une connexion à une API backend et une page utilisateur. Il y a aussi un swagger pour les prochains ajouts du site.",
+        "desc": "Site bancaire avec une connexion à une API backend et une page utilisateur. Ajout de routes sur le swagger pour les prochains ajouts du site.",
         "github": "https://github.com/aphoyy/oc-projet-10",
         "tools": ["HTML/CSS", "SCSS", "React", "React Router", "Redux", "Swagger"]
     },
     {
         "title": "Chess",
         "imgUrl": "/assets/projects/chess.jpeg",
-        "desc": "Un jeu d'échecs à deux joueurs en utilisant uniquement JavaScript de base",
+        "desc": "Un jeu d'échecs à deux joueurs en local en utilisant uniquement JavaScript de base",
         "github": "https://github.com/aphoyy/chess",
         "tools": ["HTML", "CSS", "JavaScript"]
     },
@@ -30,7 +30,7 @@
     {
         "title": "Kasa - OpenClassrooms",
         "imgUrl": "/assets/projects/kasa.jpeg",
-        "desc": "Site de location immobilière",
+        "desc": "Site de location immobilière responsive en React",
         "github": "https://github.com/aphoyy/oc-projet-7",
         "tools": ["HTML/CSS", "JavaScript", "SCSS", "React"]
     }

@@ -29,3 +29,8 @@ npm run deploy
 - React Router
 - Vite
 - npm
+
+## Credits
+- [Undertale](https://undertale.com/) by Toby Fox  
+- [Undertale text box generator](https://www.demirramon.com/generators/undertale_text_box_generator) 
+by Demirramon
